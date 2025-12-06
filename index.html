@@ -474,6 +474,91 @@
         .section-intro strong {
             color: var(--primary);
         }
+
+/* SECCIÓN FAQS */
+.faqs-section {
+    background: var(--gray-100);
+    padding: 60px 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border-left: 4px solid var(--primary);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+
+.faq-item h3 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+    font-size: 18px;
+}
+
+.faq-toggle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.faq-toggle.open {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.faq-answer.open {
+    max-height: 500px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--gray-200);
+}
+
+@media (max-width: 768px) {
+    .faq-item {
+        padding: 15px;
+    }
+    
+    .faq-item h3 {
+        font-size: 16px;
+    }
+    
+    .faqs-section {
+        padding: 40px 0;
+    }
+}
+
+        
     </style>
 </head>
 <body>
@@ -954,6 +1039,65 @@
             </div>
         </div>
     </section>
+
+<!-- SECCIÓN 8: PREGUNTAS FRECUENTES -->
+<section class="faqs-section" id="faqs">
+    <div class="container">
+        <h2>Preguntas Frecuentes sobre Carros Eléctricos e Híbridos</h2>
+        <p class="section-intro">Resolvemos las dudas más comunes sobre nuestros vehículos, precios, garantía y financiamiento.</p>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>
+                    ¿Cuál es el carro eléctrico más barato de GAC Motor en Colombia?
+                    <span class="faq-toggle">▼</span>
+                </h3>
+                <p class="faq-answer">El GAC Aion UT es el carro eléctrico más económico de GAC Motor, con un precio desde $80.990.000. Ofrece 400 km de autonomía y es perfecto para uso urbano. Como hatchback compacto, es ideal para desplazamientos por ciudad y tiene suficiente espacio para familia.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>
+                    ¿Cuánta autonomía tienen los carros eléctricos de GAC?
+                    <span class="faq-toggle">▼</span>
+                </h3>
+                <p class="faq-answer">Los carros eléctricos de GAC tienen autonomía entre 400 km (Aion UT) y 600 km (Aion V), según el modelo. El Hyptec HT ofrece 529 km de autonomía con tecnología premium y 22 parlantes Dolby Atmos. Todos utilizan baterías de litio de última generación con garantía de 8 años en la batería.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>
+                    ¿GAC Motor ofrece financiamiento para carros eléctricos?
+                    <span class="faq-toggle">▼</span>
+                </h3>
+                <p class="faq-answer">Sí, ofrecemos opciones de crédito flexible hasta 84 meses con tasas competitivas. También contamos con bonos de descuento hasta $8.000.000 según el modelo. El Aion Y Plus tiene el bono más alto ($8M), seguido por el Emkoo HEV ($5M) y los modelos Emzoom ($2.6M).</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>
+                    ¿Dónde puedo comprar un carro GAC Motor en Colombia?
+                    <span class="faq-toggle">▼</span>
+                </h3>
+                <p class="faq-answer">Tenemos vitrinas en Bogotá, Medellín y Cali. Puedes visitarnos sin compromiso para una prueba de manejo o cotizar en línea. Nuestro horario es de lunes a viernes de 9:00 AM a 6:00 PM. También puedes contactarnos por WhatsApp o teléfono para agendar una cita.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>
+                    ¿Cuál es la diferencia entre carro eléctrico e híbrido?
+                    <span class="faq-toggle">▼</span>
+                </h3>
+                <p class="faq-answer">Los carros eléctricos usan solo batería recargable (0 emisiones). Los híbridos combinan motor eléctrico + motor de gasolina, ofreciendo menor consumo de combustible y mayor autonomía de recorrido. El Emkoo HEV de GAC es un SUV híbrido completo que alcanza 1.200 km por tanque.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>
+                    ¿Cuántos años de garantía tiene un carro GAC Motor?
+                    <span class="faq-toggle">▼</span>
+                </h3>
+                <p class="faq-answer">GAC Motor ofrece garantía de 5 años o 150.000 km, lo que ocurra primero. Incluye mantenimiento gratuito en los primeros 3 años. La batería en vehículos eléctricos tiene garantía de 8 años. Todos nuestros servicios de postventa están disponibles en nuestras vitrinas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
     
     <!-- FOOTER -->
     <footer id="contacto">
@@ -984,6 +1128,27 @@
                 }
             });
         });
+
+// FAQs interactivas
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', function() {
+        // Cerrar otros FAQs
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+            if (otherItem !== this) {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-answer').classList.remove('open');
+                otherItem.querySelector('.faq-toggle').classList.remove('open');
+            }
+        });
+        
+        // Toggle el actual
+        this.classList.toggle('active');
+        this.querySelector('.faq-answer').classList.toggle('open');
+        this.querySelector('.faq-toggle').classList.toggle('open');
+    });
+});
+
+        
     </script>
 </body>
 </html>
