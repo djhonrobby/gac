@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Eléctricos y Híbridos Colombia | Precios GAC Motor 2025</title>
+    <meta name="description" content="Descubre carros eléctricos, híbridos y a gasolina de GAC Motor en Colombia. Desde $80.990.000. Conoce nuestros modelos, precios y financiamiento. Vitrinas en Bogotá, Medellín y Cali.">
+    <meta name="keywords" content="carros eléctricos Colombia, híbridos, GAC Motor, Aion, precios, vehículos eléctricos">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Carros Eléctricos y Híbridos Colombia | Precios GAC Motor 2025">
+    <meta property="og:description" content="8 modelos con tecnología innovadora. Eléctricos con hasta 600 km de autonomía.">
+    <meta property="og:url" content="https://gacmotorcolombia.com/">
+    <meta property="og:type" content="website">
+    
+    <link rel="canonical" href="https://gacmotorcolombia.com/">
+    
+    <style>
+        :root {
+            --primary: #2180cd;
+            --primary-dark: #1a5fa3;
+            --secondary: #f39c12;
+            --success: #27ae60;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-700: #495057;
+            --gray-900: #212529;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0a1931 0%, #1a3a52 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .header-cta {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(33, 128, 205, 0.3);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #e67e22;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .btn-white:hover {
+            background: var(--gray-100);
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero .subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* SECCIONES */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--gray-900);
+            font-weight: 700;
+        }
+        
+        h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .section-intro {
+            font-size: 16px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+        
+        /* CARROS GRID */
+        .carros-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .carro-card {
+            background: white;
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .carro-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            transform: translateY(-5px);
+        }
+        
+        .carro-card-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .carro-card-header h3 {
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .carro-type {
+            font-size: 13px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .carro-price {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        
+        .carro-card-body {
+            padding: 20px;
+        }
+        
+        .carro-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .spec {
+            text-align: center;
+            padding: 12px;
+            background: var(--gray-100);
+            border-radius: 8px;
+        }
+        
+        .spec-label {
+            font-size: 12px;
+            color: var(--text-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        
+        .spec-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .bono {
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .carro-btn {
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        /* COMPARATIVA TABLA */
+        .comparativa {
+            background: var(--gray-100);
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 40px;
+            overflow-x: auto;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .comparison-table tr:hover {
+            background: var(--gray-100);
+        }
+        
+        /* BENEFICIOS */
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .beneficio-card {
+            padding: 25px;
+            background: linear-gradient(135deg, var(--gray-100) 0%, white 100%);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .beneficio-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transform: translateX(5px);
+        }
+        
+        .beneficio-card h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        
+        .beneficio-card p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        /* CTA SECTION */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: 30px auto;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: var(--text);
+            font-size: 14px;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--gray-200);
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(33, 128, 205, 0.1);
+        }
+        
+        .form-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .form-btn:hover {
+            background: var(--primary-dark);
+            box-shadow: 0 4px 12px rgba(33, 128, 205, 0.3);
+        }
+        
+        .contact-methods {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: var(--gray-900);
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+            color: #bdc3c7;
+        }
+        
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero .subtitle {
+                font-size: 16px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            .carros-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-container {
+                padding: 25px;
+                margin: 20px 10px;
+            }
+            
+            .comparativa {
+                padding: 20px;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+        }
+        
+        .highlight {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        
+        .section-intro strong {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">🚗 GAC MOTOR</a>
+                <div class="header-cta">
+                    <a href="#cotizar" class="btn btn-primary">Cotizar</a>
+                    <a href="#contacto" class="btn btn-white">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>Carros Eléctricos, Híbridos y a Gasolina en Colombia | GAC Motor</h1>
+            <p class="subtitle">Explora <strong>8 modelos</strong> diseñados para tu movilidad. Desde <span class="highlight">autos eléctricos con hasta 600 km de autonomía</span> hasta <span class="highlight">híbridos con 1,200 km de alcance</span>.</p>
+            <div class="hero-buttons">
+                <a href="#modelos" class="btn btn-white">Ver Todos los Modelos</a>
+                <a href="#cotizar" class="btn btn-secondary">Cotizar Ahora</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 1: CARROS ELÉCTRICOS -->
+    <section id="electricos">
+        <div class="container">
+            <h2>Carros Eléctricos: Tecnología y Autonomía</h2>
+            <p class="section-intro">Los <strong>vehículos eléctricos de GAC</strong> representan el futuro de la movilidad sostenible. Con <strong>baterías de litio de última generación</strong> y cero emisiones, nuestros carros eléctricos en Colombia ofrecen autonomía de hasta <span class="highlight">600 km</span>, carga rápida y rendimiento superior. Desde el económico Aion UT hasta el premium Hyptec HT.</p>
+            
+            <div class="carros-grid">
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">Hatchback Eléctrico</div>
+                        <h3>GAC Aion UT</h3>
+                        <div class="carro-price">$80.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">400 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">134 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">Sedán Eléctrico</div>
+                        <h3>GAC Aion ES</h3>
+                        <div class="carro-price">$94.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">442 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">174 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">Minivan Eléctrica</div>
+                        <h3>GAC Aion Y Plus</h3>
+                        <div class="carro-price">$117.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="bono">🎁 Bono: $8.000.000</div>
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">490 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">150 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 40px;">SUV Premium Eléctrico - HYPTEC HT (529 km autonomía)</h3>
+            <div class="carros-grid" style="margin-top: 20px;">
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">SUV Premium Eléctrico</div>
+                        <h3>GAC Hyptec HT</h3>
+                        <div class="carro-price">$169.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">529 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">218 hp</div>
+                            </div>
+                        </div>
+                        <p style="font-size: 13px; color: var(--text-light); margin-top: 12px;">✓ 22 parlantes Dolby Atmos</p>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 2: VEHÍCULOS HÍBRIDOS -->
+    <section id="hibridos">
+        <div class="container">
+            <h2>Vehículos Híbridos: Lo Mejor de Dos Mundos</h2>
+            <p class="section-intro">Los <strong>carros híbridos de GAC</strong> combinan motor eléctrico y gasolina para máxima eficiencia. Perfectos para quién busca <strong>vehículos híbridos confiables en Colombia</strong> con menor consumo de combustible, menor emisiones y mayor autonomía de recorrido.</p>
+            
+            <div class="carros-grid" style="margin-top: 30px;">
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">SUV Híbrido Completo</div>
+                        <h3>GAC Emkoo HEV</h3>
+                        <div class="carro-price">$159.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="bono">🎁 Bono: $5.000.000</div>
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">1.200 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">234 hp</div>
+                            </div>
+                        </div>
+                        <p style="font-size: 13px; color: var(--text-light); margin-top: 12px;">✓ Híbrido completo con recarga externa</p>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 3: COMPARATIVA -->
+    <section id="comparativa">
+        <div class="container">
+            <h2>¿Cuál es tu Próximo Auto? Comparativa Rápida</h2>
+            <p class="section-intro">Compara nuestras opciones de <strong>carros eléctricos precios Colombia</strong>, híbridos y gasolina para encontrar el que mejor se adapta a tu estilo de vida.</p>
+            
+            <div class="comparativa">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Motorización</th>
+                            <th>Autonomía/Consumo</th>
+                            <th>Precio Desde</th>
+                            <th>Emisiones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>100% Eléctrico</strong></td>
+                            <td>400-600 km (NEDC)</td>
+                            <td>$80.990.000</td>
+                            <td>0 g CO₂/km</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Híbrido Completo</strong></td>
+                            <td>1.200 km/tanque</td>
+                            <td>$159.990.000</td>
+                            <td>~120 g CO₂/km</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gasolina Turbo</strong></td>
+                            <td>500-600 km/tanque</td>
+                            <td>$109.990.000</td>
+                            <td>~180 g CO₂/km</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 4: CATÁLOGO COMPLETO (8 MODELOS) -->
+    <section id="modelos">
+        <div class="container">
+            <h2>Nuestros 8 Modelos 2026</h2>
+            <p class="section-intro">Conoce todos nuestros <strong>carros eléctricos, híbridos y gasolina</strong> con especificaciones completas, precios y bonos disponibles.</p>
+            
+            <div class="carros-grid">
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">Hatchback Eléctrico</div>
+                        <h3>GAC Aion UT</h3>
+                        <div class="carro-price">$80.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">400 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">134 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">Sedán Eléctrico</div>
+                        <h3>GAC Aion ES</h3>
+                        <div class="carro-price">$94.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">442 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">174 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">Minivan Eléctrica</div>
+                        <h3>GAC Aion Y Plus</h3>
+                        <div class="carro-price">$117.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="bono">🎁 Bono: $8.000.000</div>
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">490 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">150 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">SUV Eléctrico</div>
+                        <h3>GAC Aion V</h3>
+                        <div class="carro-price">$125.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">600 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">184 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">SUV Premium Eléctrico</div>
+                        <h3>GAC Hyptec HT</h3>
+                        <div class="carro-price">$169.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">529 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">218 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">SUV Híbrido Completo</div>
+                        <h3>GAC Emkoo HEV</h3>
+                        <div class="carro-price">$159.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="bono">🎁 Bono: $5.000.000</div>
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Autonomía</div>
+                                <div class="spec-value">1.200 km</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">234 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">SUV Deportivo Turbo</div>
+                        <h3>GAC Emzoom R-Style</h3>
+                        <div class="carro-price">$124.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="bono">🎁 Bono: $2.600.000</div>
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Tipo</div>
+                                <div class="spec-value">Gasolina</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">174 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <div class="carro-card">
+                    <div class="carro-card-header">
+                        <div class="carro-type">SUV Turbo Económico</div>
+                        <h3>GAC Emzoom Comfort</h3>
+                        <div class="carro-price">$109.990.000</div>
+                    </div>
+                    <div class="carro-card-body">
+                        <div class="bono">🎁 Bono: $2.600.000</div>
+                        <div class="carro-specs">
+                            <div class="spec">
+                                <div class="spec-label">Tipo</div>
+                                <div class="spec-value">Gasolina</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec-label">Potencia</div>
+                                <div class="spec-value">156 hp</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary carro-btn">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 5: BENEFICIOS -->
+    <section id="beneficios">
+        <div class="container">
+            <h2>¿Por Qué Elegirnos?</h2>
+            <p class="section-intro">GAC Motor te ofrece las mejores garantías, precios y servicio postventa en Colombia.</p>
+            
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <h3>✓ Garantía 5 años o 150.000 km</h3>
+                    <p>Respaldamos tu compra con la mejor garantía del mercado. Mantenimiento incluido en los primeros 3 años.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>✓ Bonos Descuento hasta $8.000.000</h3>
+                    <p>Ahorra en tu compra con nuestras promociones exclusivas. Descuentos variables por modelo.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>✓ Vitrinas en Bogotá, Medellín y Cali</h3>
+                    <p>Visita nuestras vitrinas en las principales ciudades. Prueba de manejo sin compromiso.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>✓ Financiamiento Flexible</h3>
+                    <p>Opciones de crédito hasta 84 meses con tasas competitivas. Financiar carro eléctrico nunca fue tan fácil.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>✓ Servicio Postventa Especializado</h3>
+                    <p>Mantenimiento y repuestos originales garantizados. Técnicos especializados en vehículos eléctricos.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>✓ Tecnología Innovadora</h3>
+                    <p>Baterías de litio de última generación. Sistemas de carga rápida y larga autonomía.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 6: SOBRE GAC MOTOR -->
+    <section id="sobre-gac">
+        <div class="container">
+            <h2>GAC Motor - Marca China Líder en Innovación</h2>
+            <p class="section-intro">GAC Motor es una <strong>marca china de carro</strong> con presencia en Colombia desde 2024. Especializada en <strong>vehículos eléctricos innovadores</strong>, ofrecemos modelos con <strong>baterías de lithium</strong> de última generación que garantizan autonomía, seguridad y rendimiento superior.</p>
+            <p class="section-intro">Nuestros <strong>automoviles electricos</strong> combinan tecnología china de punta con precios competitivos, posicionándose como la alternativa inteligente en el mercado colombiano. Con respaldo de Grupo Automotriz Carrera, ofrecemos servicio, garantía y confianza.</p>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 7: CTA CONVERSIÓN -->
+    <section class="cta-section" id="cotizar">
+        <div class="container">
+            <h2>Encuentra Tu Próximo Auto Hoy</h2>
+            <p style="font-size: 18px; opacity: 0.95; margin-bottom: 20px;">Completa este formulario para recibir una cotización personalizada. Nuestro equipo se contactará en máximo 2 horas.</p>
+            
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Tu Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Tu Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Tu Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modelo">¿Cuál modelo te interesa? *</label>
+                        <select id="modelo" name="modelo" required>
+                            <option value="">Selecciona un modelo</option>
+                            <option value="aion-ut">GAC Aion UT - $80.990.000</option>
+                            <option value="aion-es">GAC Aion ES - $94.990.000</option>
+                            <option value="aion-y-plus">GAC Aion Y Plus - $117.990.000</option>
+                            <option value="aion-v">GAC Aion V - $125.990.000</option>
+                            <option value="hyptec-ht">GAC Hyptec HT - $169.990.000</option>
+                            <option value="emkoo-hev">GAC Emkoo HEV - $159.990.000</option>
+                            <option value="emzoom-r-style">GAC Emzoom R-Style - $124.990.000</option>
+                            <option value="emzoom-comfort">GAC Emzoom Comfort - $109.990.000</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="form-btn">Enviar Cotización</button>
+                </form>
+            </div>
+            
+            <div class="contact-methods">
+                <a href="https://wa.me/573001234567" target="_blank" class="btn btn-white">📱 Chat WhatsApp</a>
+                <a href="tel:+573001234567" class="btn btn-white">☎️ Llamar Ahora</a>
+            </div>
+            
+            <div style="margin-top: 30px; color: white; opacity: 0.9;">
+                <p><strong>Horario de Atención:</strong> Lunes a Viernes 9:00 AM - 6:00 PM</p>
+                <p>🎯 Vitrinas: Bogotá | Medellín | Cali</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="container">
+            <p><strong>GAC Motor Colombia</strong></p>
+            <p>Venta de Carros Eléctricos, Híbridos y a Gasolina</p>
+            <p>📞 +57 (1) 6000-000 | 📧 contacto@gacmotorcolombia.com</p>
+            <p>Bogotá | Medellín | Cali</p>
+            <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #444; font-size: 13px;">© 2025 GAC Motor Colombia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu interés! Nos contactaremos pronto con tu cotización personalizada.');
+            this.reset();
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
