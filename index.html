@@ -17,22 +17,20 @@
     
     <style>
         :root {
-            /* colores GAC oficiales */
+            /* colores GAC - negro, blanco, rojo */
             --primary: #EB0A1E;
             --primary-dark: #B5102D;
             --primary-darker: #7C1927;
-            --secondary: #54ACF4;
-            --secondary-dark: #2E7DB8;
+            --bg-dark: #1a1a1a;
+            --bg-darker: #0f0f0f;
+            --text-white: #ffffff;
+            --text-light: #d0d0d0;
             /* grises */
-            --gray-100: #f8f9fa;
-            --gray-200: #e9ecef;
-            --gray-700: #495057;
-            --gray-900: #212529;
-            --gray-dark: #333333;
-            --gray-light: #CCCCCC;
-            /* textos */
-            --text: #1a1a1a;
-            --text-light: #666666;
+            --gray-100: #2a2a2a;
+            --gray-200: #404040;
+            --gray-700: #999999;
+            --gray-900: #1a1a1a;
+            --gray-dark: #0f0f0f;
         }
         
         * {
@@ -44,8 +42,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: var(--text);
-            background-color: #fff;
+            color: var(--text-white);
+            background-color: var(--bg-dark);
         }
         
         .container {
@@ -55,13 +53,14 @@
         }
         
         header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            background: var(--bg-darker);
             color: white;
             padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(235, 10, 30, 0.2);
+            border-bottom: 2px solid var(--primary);
+            box-shadow: 0 2px 10px rgba(235, 10, 30, 0.3);
         }
         
         .header-content {
@@ -75,7 +74,7 @@
             font-size: 24px;
             font-weight: 700;
             text-decoration: none;
-            color: white;
+            color: var(--primary);
         }
         
         .header-cta {
@@ -103,30 +102,33 @@
         .btn-primary:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(235, 10, 30, 0.3);
+            box-shadow: 0 4px 12px rgba(235, 10, 30, 0.5);
         }
         
         .btn-secondary {
-            background: var(--secondary);
-            color: white;
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
         }
         
         .btn-secondary:hover {
-            background: var(--secondary-dark);
+            background: var(--primary);
+            color: white;
         }
         
         .btn-white {
-            background: white;
+            background: var(--text-white);
             color: var(--primary);
         }
         
         .btn-white:hover {
-            background: var(--gray-100);
+            background: var(--text-light);
         }
         
         /* HERO SECTION */
         .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+            border-top: 4px solid var(--primary);
             color: white;
             padding: 80px 0;
             text-align: center;
@@ -137,6 +139,7 @@
             margin-bottom: 20px;
             font-weight: 700;
             line-height: 1.2;
+            color: var(--text-white);
         }
         
         .hero .subtitle {
@@ -146,6 +149,7 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            color: var(--text-light);
         }
         
         .hero-buttons {
@@ -159,6 +163,7 @@
         section {
             padding: 60px 0;
             border-bottom: 1px solid var(--gray-200);
+            background: var(--bg-dark);
         }
         
         section:last-child {
@@ -168,14 +173,14 @@
         h2 {
             font-size: 36px;
             margin-bottom: 20px;
-            color: var(--text);
+            color: var(--text-white);
             font-weight: 700;
         }
         
         h3 {
             font-size: 22px;
             margin-bottom: 15px;
-            color: var(--text);
+            color: var(--text-white);
             font-weight: 600;
         }
         
@@ -195,17 +200,18 @@
         }
         
         .carro-card {
-            background: white;
+            background: var(--gray-100);
             border: 1px solid var(--gray-200);
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
         
         .carro-card:hover {
-            box-shadow: 0 8px 20px rgba(235, 10, 30, 0.15);
+            box-shadow: 0 8px 20px rgba(235, 10, 30, 0.3);
             transform: translateY(-5px);
+            border-color: var(--primary);
         }
         
         .carro-card-header {
@@ -246,7 +252,7 @@
         .spec {
             text-align: center;
             padding: 12px;
-            background: var(--gray-100);
+            background: var(--gray-200);
             border-radius: 8px;
         }
         
@@ -265,14 +271,15 @@
         }
         
         .bono {
-            background: #fff3cd;
-            color: #856404;
+            background: #4a3a00;
+            color: #ffdd00;
             padding: 10px;
             border-radius: 6px;
             font-size: 13px;
             font-weight: 600;
             text-align: center;
             margin-bottom: 15px;
+            border-left: 3px solid var(--primary);
         }
         
         .carro-btn {
@@ -287,12 +294,13 @@
             border-radius: 12px;
             margin-top: 40px;
             overflow-x: auto;
+            border-left: 4px solid var(--primary);
         }
         
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
-            background: white;
+            background: var(--bg-dark);
         }
         
         .comparison-table th {
@@ -306,10 +314,11 @@
         .comparison-table td {
             padding: 15px;
             border-bottom: 1px solid var(--gray-200);
+            color: var(--text-white);
         }
         
         .comparison-table tr:hover {
-            background: var(--gray-100);
+            background: var(--gray-200);
         }
         
         .source-note {
@@ -329,15 +338,16 @@
         
         .beneficio-card {
             padding: 25px;
-            background: linear-gradient(135deg, var(--gray-100) 0%, white 100%);
+            background: var(--gray-100);
             border-left: 4px solid var(--primary);
             border-radius: 8px;
             transition: all 0.3s ease;
         }
         
         .beneficio-card:hover {
-            box-shadow: 0 8px 20px rgba(235, 10, 30, 0.1);
+            box-shadow: 0 8px 20px rgba(235, 10, 30, 0.2);
             transform: translateX(5px);
+            background: var(--gray-200);
         }
         
         .beneficio-card h3 {
@@ -367,7 +377,7 @@
         .test-drive-image {
             overflow: hidden;
             border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
         
         .test-drive-image img {
@@ -391,8 +401,8 @@
         .test-drive-btn {
             display: inline-block;
             padding: 16px 40px;
-            background: var(--secondary);
-            color: white;
+            background: var(--text-white);
+            color: var(--primary);
             border: none;
             border-radius: 8px;
             font-size: 16px;
@@ -403,9 +413,9 @@
         }
         
         .test-drive-btn:hover {
-            background: var(--secondary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(84, 172, 244, 0.4);
+            background: var(--bg-dark);
+            color: white;
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
         }
         
         .contact-info {
@@ -431,7 +441,7 @@
         }
         
         .faq-item {
-            background: white;
+            background: var(--bg-dark);
             border-left: 4px solid var(--primary);
             padding: 20px;
             margin-bottom: 15px;
@@ -441,8 +451,9 @@
         }
         
         .faq-item:hover {
-            box-shadow: 0 4px 12px rgba(235, 10, 30, 0.1);
+            box-shadow: 0 4px 12px rgba(235, 10, 30, 0.2);
             transform: translateX(5px);
+            background: var(--gray-200);
         }
         
         .faq-item h3 {
@@ -450,7 +461,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: var(--text);
+            color: var(--text-white);
             font-size: 18px;
         }
         
@@ -490,15 +501,16 @@
         
         /* FOOTER */
         footer {
-            background: var(--gray-dark);
-            color: white;
+            background: var(--bg-darker);
+            color: var(--text-white);
             padding: 40px 0 20px;
             text-align: center;
+            border-top: 2px solid var(--primary);
         }
         
         footer p {
             margin-bottom: 10px;
-            color: #bdc3c7;
+            color: var(--text-light);
         }
         
         /* RESPONSIVO */
@@ -538,7 +550,7 @@
         }
         
         .highlight {
-            color: var(--secondary);
+            color: var(--primary);
             font-weight: 600;
         }
         
@@ -555,7 +567,7 @@
                 <a href="#" class="logo">🚗 GAC MOTOR</a>
                 <div class="header-cta">
                     <a href="#test-drive" class="btn btn-secondary">Reservar Test Drive</a>
-                    <a href="#contacto" class="btn btn-white">Contacto</a>
+                    <a href="#contacto" class="btn btn-primary">Contacto</a>
                 </div>
             </div>
         </div>
@@ -568,15 +580,15 @@
             <p class="subtitle">Explora <strong>8 modelos</strong> diseñados para tu movilidad. Desde <span class="highlight">autos eléctricos con hasta 600 km de autonomía</span> hasta <span class="highlight">híbridos con 1.200 km de alcance</span>.</p>
             <div class="hero-buttons">
                 <a href="#electricos" class="btn btn-white">Ver Eléctricos</a>
-                <a href="#test-drive" class="btn btn-secondary">Reservar Ahora</a>
+                <a href="#test-drive" class="btn btn-primary">Reservar Ahora</a>
             </div>
         </div>
     </section>
     
-    <!-- SECCIÓN 1: CARROS ELÉCTRICOS -->
+    <!-- SECCIÓN 1: VEHÍCULOS ELÉCTRICOS (CAMBIO AQUÍ) -->
     <section id="electricos">
         <div class="container">
-            <h2>Carros Eléctricos: Tecnología y Autonomía</h2>
+            <h2>Vehículos Eléctricos: Tecnología y Autonomía</h2>
             <p class="section-intro">Los <strong>vehículos eléctricos de GAC</strong> representan el futuro de la movilidad sostenible. Con <strong>baterías de litio de última generación</strong> y cero emisiones, nuestros carros eléctricos en Colombia ofrecen autonomía de hasta <span class="highlight">600 km</span>, carga rápida y rendimiento superior. Desde el económico Aion UT hasta el premium Hyptec HT.</p>
             
             <div class="carros-grid">
@@ -723,7 +735,7 @@
         </div>
     </section>
     
-    <!-- SECCIÓN 3: VEHÍCULOS A GASOLINA (NUEVA) -->
+    <!-- SECCIÓN 3: VEHÍCULOS A GASOLINA -->
     <section id="gasolina">
         <div class="container">
             <h2>Vehículos a Gasolina: Potencia y Confiabilidad</h2>
@@ -779,7 +791,7 @@
         </div>
     </section>
     
-    <!-- SECCIÓN 4: COMPARATIVA CON EMISIONES Y FUENTES -->
+    <!-- SECCIÓN 4: COMPARATIVA -->
     <section id="comparativa">
         <div class="container">
             <h2>¿Cuál es tu Próximo Auto? Comparativa Rápida</h2>
@@ -861,12 +873,12 @@
         </div>
     </section>
     
-    <!-- SECCIÓN 6: TEST DRIVE (REDISEÑADA - 2 COLUMNAS) -->
+    <!-- SECCIÓN 6: TEST DRIVE (IMAGEN EMZOOM) -->
     <section class="test-drive-section" id="test-drive">
         <div class="container">
             <div class="test-drive-content">
                 <div class="test-drive-image">
-                    <img src="https://images.unsplash.com/photo-1560958089-b8a63dd8b50b?w=600&h=400&fit=crop" alt="GAC Motor Aion V - Prueba de Manejo">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAA..." alt="GAC Emzoom - Prueba de Manejo" onerror="this.src='https://via.placeholder.com/600x400?text=GAC+Emzoom'">
                 </div>
                 <div class="test-drive-text">
                     <h2>Experimenta la Diferencia</h2>
@@ -955,7 +967,7 @@
             <p>Venta de Carros Eléctricos, Híbridos y a Gasolina</p>
             <p>📞 +57 (1) 6000-000 | 📧 contacto@gacmotorcolombia.com</p>
             <p>Bogotá | Medellín | Cali</p>
-            <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #444; font-size: 13px;">© 2025 GAC Motor Colombia. Todos los derechos reservados.</p>
+            <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--primary); font-size: 13px;">© 2025 GAC Motor Colombia. Todos los derechos reservados.</p>
         </div>
     </footer>
     
